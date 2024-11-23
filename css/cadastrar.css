@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a3dbe3;
+}
+
+header {
+    background-color: #4ca14c;
+    color: white;
+    padding: 5px 20px;
+    display: flex;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    display: flex; /* Importante para alinhar o texto central */
+}
+.top-bar h1 {
+    display: flex; /* Centraliza o texto no header */
+    left: 50%; /* Move o texto horizontalmente para o centro */
+    transform: translateX(-50%); /* Ajusta para centralização real */
+    font-size: 1.5em;
+    color: white;
+}
+
+.top-options {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    align-items: center;
+}
+
+.acessibilidade, .contraste {
+    font-size: 0.9em;
+    color: white;
+    margin-right: 10px;
+}
+
+.login-button {
+    background-color: #38755B;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Aumenta o botão */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em; /* Ajusta o tamanho do texto do botão */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 80vh;
+}
+
+.registro-container {
+    display: flex;
+    align-items: stretch; /* Faz os elementos internos se ajustarem igualmente */
+    justify-content: space-between;
+    background-color: #f0f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Faz o container ocupar toda a largura disponível */
+    max-width: 800px; /* Opcional: Define um limite máximo para a largura */
+}
+
+
+.formulario {
+    margin-right: 20px;
+}
+
+.formulario h2 {
+    color: #005F6B;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.formulario label {
+    display: block;
+    color: #005F6B;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #005F6B;
+    border-radius: 5px;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #005F6B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.imagem-container {
+    flex: 1; /* O container da imagem ocupa o espaço restante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-inclusao {
+    width: 100%; /* Define a largura máxima para ocupar todo o container */
+    max-width: 500px; /* Define uma largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+footer {
+    background-color: #005F6B;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-menu {
+    margin-top: 10px;
+}
+
+.footer-menu a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+
+.mensagem {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    z-index: 1000;
+    animation: fadeInOut 3s ease;
+}
+
+.mensagem.sucesso {
+    background-color: #4CAF50; /* Verde para sucesso */
+}
+
+.mensagem.erro {
+    background-color: #f44336; /* Vermelho para erro */
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-10px); }
+    10% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(-10px); }
+}
