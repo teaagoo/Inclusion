@@ -237,20 +237,23 @@ body{
     flex: 1 1 100vw;
     background-color: #005F6B;
     height: 150px;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .logo2{
     width: 100px;
+    max-height: 100px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    border: 3px solid purple;
+    background-color: black;
+    border: 1px solid rgb(255, 5, 180);
 }
 .menu{
-    border: 2px solid brown;
-    height: 100px;
+    height: 80px;
 }
 .linha{
     border: 2px solid green;
+    align-self: self-end;
+    margin-right: 500px;
 }
 
