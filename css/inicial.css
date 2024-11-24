@@ -9,36 +9,31 @@ body{
     width: auto;
 
 }
-
-
-
-.contraste{
-    margin-left: 10px;
-}
 .top{
+    background-color: #4ca14c;
     display: flex;
-    background-color: #4ca14c ;
-    justify-content: center;
+    height: 40px;
+    justify-content: space-between;
     align-items: center;
-    padding: 15px 0px;
-    font-size: 1.0em ;
-    color: #ffffff;
+    padding: 0 2%;
+    font-size: 1rem;
+    color: white;
+    flex: 1 1 100vw;
 }
 
 .top-bar{
     margin: auto; 
-  justify-content: center;
-}
+  justify-content: center;}
 .top-options{
     display: flex;
   text-align: center;
-  margin-right: 10px;
+ 
 }
 .nav-bar{
     background-color: #005F6B;
     display: flex;
     align-content: space-around;
-    max-height: 90px;
+    max-height: 70px;
     box-sizing: border-box;
     align-items: center;
 }
@@ -52,7 +47,7 @@ body{
 .imagem-logo {
     width: 100%; 
     height: auto; 
-    object-fit: contain;
+    object-fit: cover;
 }
 .nav-list{
     display: flex;
@@ -234,26 +229,49 @@ body{
 
 .rodape {
     display: flex;
-    flex: 1 1 100vw;
+    flex-direction: column; 
     background-color: #005F6B;
-    height: 150px;
-    justify-content: space-around;
-}
-.logo2{
-    width: 100px;
-    max-height: 100px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    border: 1px solid rgb(255, 5, 180);
-}
-.menu{
-    height: 80px;
-}
-.linha{
-    border: 2px solid green;
-    align-self: self-end;
-    margin-right: 500px;
+    padding: 20px;
+    align-items: center;
+    gap: 10px; 
+    height: 200px;
 }
 
+.conteudo-superior {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    width: 100%; 
+    max-width: 600px;
+}
+.logo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px; 
+}
+
+.menu {
+    display: flex;
+    flex-direction: column; 
+    text-align: left; 
+    gap: 5px; 
+    color: #ffffff;
+}
+.conteudo-inferior{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+.direitos{
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.linha {
+    width: 700px; 
+    height: 2px; 
+    background-color: #ffffff;
+
+}
