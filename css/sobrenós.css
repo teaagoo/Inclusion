@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+}
+header {
+    background-color: #4ca14c;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    font-size: 1rem;
+    color: white;
+    flex: 1 1 100vw;
+    
+}
+
+.nav-bar{
+        background-color: #005F6B;
+        display: flex;
+        align-content: space-around;
+        max-height: 70px;
+        box-sizing: border-box;
+        align-items: center;
+        flex: 1 1 100vw;
+}
+.logo{
+    width: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+.imagem-logo {
+    width: 100%; 
+    height: auto; 
+}
+.nav-list{
+    display: flex;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item{
+    margin: 0 15px;
+    display: flex;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #ffffff;
+    display: flex; 
+}
+.nav-img{
+    width: 10px;
+    display: flex;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    width: 480px;
+}
+.bar{
+    height: 2rem;
+    width: 500px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    margin: 0;
+}
+
+
+#main{
+    display: flex;
+    flex: 1 1 100vw;
+    height: 80vh;
+    background-color: #A0DED6;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.top-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1 1 300px ;
+    justify-content: center;
+}
+.top-rigth{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1 1 300px ;
+}
+.texto-titulo{
+    align-self: center;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+.rodape {
+    display: flex;
+    flex: 1 1 100vw;
+    flex-direction: column; 
+    background-color: #005F6B;
+    padding: 20px;
+    align-items: center;
+    gap: 10px; 
+    height: 200px;
+}
+
+.conteudo-superior {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    width: 100%; 
+    max-width: 800px;
+}
+
+.logo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px; 
+}
+
+.menu {
+    display: flex;
+    flex-direction: column; 
+    text-align: left; 
+    gap: 5px; 
+    color: #ffffff;
+}
+.conteudo-inferior{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+
+.linha2 {
+    width: 700px; 
+    height: 2px; 
+    background-color: #ffffff;
+
+}

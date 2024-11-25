@@ -19,12 +19,12 @@ header {
 .top-bar {
     display: flex;
     align-items: center;
-    display: flex; /* Importante para alinhar o texto central */
+    display: flex; 
 }
 .top-bar h1 {
-    display: flex; /* Centraliza o texto no header */
-    left: 50%; /* Move o texto horizontalmente para o centro */
-    transform: translateX(-50%); /* Ajusta para centralização real */
+    display: flex; 
+    left: 50%; 
+    transform: translateX(-50%); 
     font-size: 1.5em;
     color: white;
 }
@@ -46,10 +46,10 @@ header {
     background-color: #38755B;
     color: white;
     border: none;
-    padding: 10px 20px; /* Aumenta o botão */
+    padding: 10px 20px; 
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em; /* Ajusta o tamanho do texto do botão */
+    font-size: 1em; 
 }
 
 main {
@@ -62,14 +62,14 @@ main {
 
 .registro-container {
     display: flex;
-    align-items: stretch; /* Faz os elementos internos se ajustarem igualmente */
+    align-items: stretch; 
     justify-content: space-between;
     background-color: #f0f7f7;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 100%; /* Faz o container ocupar toda a largura disponível */
-    max-width: 800px; /* Opcional: Define um limite máximo para a largura */
+    width: 100%; 
+    max-width: 800px; 
 }
 
 
@@ -111,17 +111,17 @@ main {
 }
 
 .imagem-container {
-    flex: 1; /* O container da imagem ocupa o espaço restante */
+    flex: 1; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .imagem-inclusao {
-    width: 100%; /* Define a largura máxima para ocupar todo o container */
-    max-width: 500px; /* Define uma largura máxima para a imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 10px; /* Bordas arredondadas */
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -168,16 +168,16 @@ footer p {
 }
 
 .mensagem.sucesso {
-    background-color: #4CAF50; /* Verde para sucesso */
+    background-color: #4CAF50; 
 }
 
 .mensagem.erro {
-    background-color: #f44336; /* Vermelho para erro */
-}
+    background-color: #f44336; 
 
 @keyframes fadeInOut {
     0% { opacity: 0; transform: translateY(-10px); }
     10% { opacity: 1; transform: translateY(0); }
     90% { opacity: 1; }
     100% { opacity: 0; transform: translateY(-10px); }
+}
 }

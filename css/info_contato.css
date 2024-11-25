@@ -68,6 +68,7 @@ header {
     display: flex;
     align-items: center;
     width: 480px;
+    font-size: 5px;
 }
 .bar{
     height: 2rem;
@@ -75,7 +76,9 @@ header {
     border: none;
     display: flex;
     margin: 0;
+    padding-left: 10px;
 }
+
 .titulo{
     display: flex;
     flex-direction: column;
@@ -132,7 +135,6 @@ aside{
 main{
     display: flex;
     flex: 20 1 500px;
-
     height: 1430px;
     background-color: #A0DED6;
     flex-direction: column;
@@ -281,9 +283,9 @@ button:hover {
 }
 
 .small-main {
-    height: 600px; /* Altura reduzida */
-    background-color: #A0DED6; /* Mantém a cor original */
-    padding: 20px; /* Ajuste para manter espaçamento */
+    height: 600px; 
+    background-color: #A0DED6; 
+    padding: 20px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -291,7 +293,7 @@ button:hover {
 }
 .quadrado-gigante {
     display: flex;
-    flex-direction: column; /* Alinhar em coluna */
+    flex-direction: column; 
     width: 100%;
     height: 500px;
     border: 1px solid #ccc;
@@ -303,13 +305,13 @@ button:hover {
 .top-bar,
 .bottom-bar {
     display: flex;
-    justify-content: space-between; /* Garante o espaço entre elementos */
+    justify-content: space-between; 
     align-items: center;
-    width: 100%; /* Garante que ocupe toda a largura */
-    padding: 5px 10px; /* Espaçamento interno */
-    border-bottom: 1px solid #ccc; /* Linha divisória */
-    background-color: #eaeaea; /* Fundo para destacar */
-    color: #333; /* Cor do texto */
+    width: 100%; 
+    padding: 5px 10px; 
+    border-bottom: 1px solid #ccc; 
+    background-color: #eaeaea; 
+    color: #333; 
 }
 .right{
     display: flex;
@@ -317,7 +319,7 @@ button:hover {
 }
 
 .content {
-    flex: 1; /* Ocupar o restante do espaço disponível */
+    flex: 1; 
     display: flex;
     align-items: center;
     justify-content: center;
