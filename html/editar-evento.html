@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Evento</title>
+    <link rel="stylesheet" href="/css/editar-evento.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nada"></div>
+        <div class="cidade"> <span> 📍Guanambi, BA</span></div>
+        <div class="acessibilidade">
+            <span>+ | A | -</span>
+            <span>Contraste</span>
+        </div>
+    </header>
+    <nav class="nav-bar">
+        <div class="logo">
+            <img src="/img/image 25.png" alt="" class="imagem-logo" >
+        </div>
+        <div class="search-bar">
+            <input class="bar" type="text" name="searcbar" placeholder="Pesquisar Eventos" onkeyup="search()">
+        </div>
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Eventos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Criar um Evento</a></li>
+                <li class="nav-item"><i class="fa-regular fa-circle-user"></i></li>
+                <li class="nav-item"><a href="#" class="nav-link">Nome do Usuario</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <form id="editEventForm">
+            <h1>Editar Evento</h1>
+    
+            <!-- Seletor de Evento (para selecionar qual evento editar) -->
+            <div>
+                <label for="eventSelect">Escolha o Evento:</label>
+                <select id="eventSelect" name="eventSelect" onchange="loadEventData()">
+                    <option value="">Selecione um Evento</option>
+                    <!-- Aqui você pode listar os eventos disponíveis -->
+                    <option value="1">Evento 1</option>
+                    <option value="2">Evento 2</option>
+                    <option value="3">Evento 3</option>
+                </select>
+            </div>
+    
+            <!-- Imagem do Evento -->
+            <div>
+                <label for="eventImage">Imagem do Evento:</label>
+                <input type="file" id="eventImage" name="eventImage" accept="image/*">
+            </div>
+    
+            <!-- Nome do Evento -->
+            <div>
+                <label for="eventName">Nome do Evento:</label>
+                <input type="text" id="eventName" name="eventName" placeholder="Nome do Evento" required>
+            </div>
+    
+            <!-- Data e Hora -->
+            <div>
+                <label for="eventDateTime">Data e Hora do Evento:</label>
+                <input type="datetime-local" id="eventDateTime" name="eventDateTime" required>
+            </div>
+    
+            <!-- Localização -->
+            <div>
+                <label for="eventLocation">Localização:</label>
+                <input type="text" id="eventLocation" name="eventLocation" placeholder="Endereço do Evento" required>
+            </div>
+    
+            <!-- Descrição -->
+            <div>
+                <label for="eventDescription">Descrição:</label>
+                <textarea id="eventDescription" name="eventDescription" placeholder="Descrição do Evento" rows="4" required></textarea>
+            </div>
+    
+            <!-- Tipo de Ingresso -->
+            <div>
+                <label for="ticketType">Ingresso:</label>
+                <select id="ticketType" name="ticketType" onchange="toggleTicketFields()">
+                    <option value="free">Gratuito</option>
+                    <option value="paid">Pago</option>
+                </select>
+            </div>
+    
+            <!-- Valor do Ingresso e Quantidade Disponível -->
+            <div id="paidTicketFields" style="display:none;">
+                <div>
+                    <label for="ticketValue">Valor do Ingresso:</label>
+                    <input type="number" id="ticketValue" name="ticketValue" placeholder="Valor" min="0" step="0.01">
+                </div>
+                <div>
+                    <label for="ticketQuantity">Quantidade de Ingressos:</label>
+                    <input type="number" id="ticketQuantity" name="ticketQuantity" placeholder="Quantidade" min="1">
+                </div>
+            </div>
+    
+            <!-- Data e Hora de Início e Fim -->
+            <div>
+                <label for="eventStart">Data e Hora de Início:</label>
+                <input type="datetime-local" id="eventStart" name="eventStart" required>
+            </div>
+            <div>
+                <label for="eventEnd">Data e Hora de Fim:</label>
+                <input type="datetime-local" id="eventEnd" name="eventEnd" required>
+            </div>
+    
+            <!-- Tipos de Organização -->
+            <div>
+                <label for="eventType">Tipo de Organização:</label>
+                <input type="text" id="eventType" name="eventType" placeholder="Tipo da Organização" required>
+            </div>
+    
+            <!-- Tags do Evento -->
+            <div>
+                <label for="eventTags">Tags:</label>
+                <input type="text" id="eventTags" name="eventTags" placeholder="Ex: Música, Cultura, Esportes" required>
+            </div>
+    
+            <!-- Botão Editar Evento -->
+            <div>
+                <button type="submit" id="editEventButton">Editar Evento</button>
+            </div>
+        </form>
+    </main>
+    <footer class="rodape">
+        <div class="conteudo-superior">
+            <div class="logo2">
+                <img src="/img/image 25.png" alt="Logo" class="imagem-logo">
+            </div>
+            <div class="menu">
+                <h3>Menu</h3>
+                <p>Sobre Nós</p>
+                <p>Avaliar Serviços</p>
+            </div>
+        </div>
+        
+        <div class="conteudo-inferior">
+            <div class="linha"></div>
+            <div class="direitos"><p>2024 InclusiOn | Todos os direitos reservados.</p></div>
+        </div>
+    </footer>
+</body>
+<script src="/js/editar-evento.js"></script>
+</html>
