@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InclusiON - Registro</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="static/scriptCadastro.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="top-bar">
+            <span>Guanambi, BA</span>
+            <div class="top-options">
+                <span class="acessibilidade">+ | A | -</span>
+                <span class="contraste">Contraste</span>
+                <button class="login-button">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <div class="registro-container">
+            <!-- Formulário de Registro -->
+            <div class="formulario">
+                <h2>Cadastro</h2>
+                <form id="registro-form" th:action="@{/cadastroUsuario}" method="POST">
+                    <!-- Nome Completo -->
+                    <label for="full-name">Nome Completo</label>
+                    <input type="text" id="full-name" name="nome" placeholder="Nome completo" required>
+                
+                    <!-- E-mail -->
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="E-mail" required>
+                
+                    <!-- Confirmar E-mail -->
+                    <label for="confirm-email">Confirmar E-mail</label>
+                    <input type="email" id="confirm-email" name="confirmEmail" placeholder="Confirmar E-mail" required>
+                
+                    <!-- Senha -->
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="senha" placeholder="Senha" required>
+                
+                    <!-- Confirmar Senha -->
+                    <label for="confirm-password">Confirmar Senha</label>
+                    <input type="password" id="confirm-password" name="confirmSenha" placeholder="Confirmar Senha" required>
+                
+                    <button type="submit" class="botao">Criar Conta</button>
+                    
+                </form>
+            
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <img src="imagens/logo-footer.webp" alt="Logo InclusiON" class="footer-logo">
+        <nav class="footer-menu">
+            <a href="#">Sobre nós</a>
+            <a href="#">Avaliar serviços</a>
+        </nav>
+        <p>© 2024 InclusiON | Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
