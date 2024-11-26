@@ -1,62 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info_contato</title>
+    <title>Editar Perfil</title>
     <link rel="stylesheet" href="/css/info_contato.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <script src="/js/script.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="nada"></div>
-        <div class="cidade"> <span> 📍Guanambi, BA</span></div>
-        <div class="acessibilidade">
-            <span>+ | A | -</span>
-            <span>Contraste</span>
+    <header class="header-zoom">
+        <div class="zoom-controls">
+           <span id="guarambi-title">Guanambi</span>
+          <button id="zoom-in">+</button>
+          <button id="zoom-out">-</button>
         </div>
-    </header>
-    <nav class="nav-bar">
-        <div class="logo">
-            <img src="/img/image 25.png" alt="" class="imagem-logo" >
-        </div>
+      </header>
+    
+      <!-- Segundo header com barra de pesquisa e navegação -->
+      <header class="header">
         <div class="search-bar">
-            <input class="bar" type="text" name="searcbar" placeholder="Pesquisar Eventos" onkeyup="search()">
+          <img src="/img/image 25.png" alt="Logo" class="search-bar-img">
+          <input type="text" placeholder="Procurar eventos">
+          <button>🔍</button>
         </div>
-        <div class="nav-list">
-            <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Eventos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Criar um Evento</a></li>
-                <li class="nav-item"><i class="fa-regular fa-circle-user"></i></li>
-                <li class="nav-item"><a href="#" class="nav-link">Nome do Usuario</a></li>
-            </ul>
+        <nav class="nav">
+          <a href="/html/eventos.html">Eventos</a>
+          <a href="/html/criar-evento.html">Criar um evento</a>
+          <a href="/html/main.html">Login</a>
+          <a href="/html/cadastrar.html">Cadastrar-se</a>
+        </nav>
+      </header>
+    <main class="account-section">
+        <h1>Editar Perfil</h1>
+        <div class="account-grid">
+            <!-- Foto de Perfil -->
+            <div class="profile-picture">
+                <h2>Foto de Perfil</h2>
+                <img id="profile-img" src="https://via.placeholder.com/150" alt="Foto de Perfil">
+                <input type="file" id="profile-pic-input" accept="image/*">
+                <button id="upload-btn">Carregar Foto</button>
+            </div>
+            <!-- Informações de Contato -->
+            <div class="contact-info">
+                <h2>Informações de Contato</h2>
+                <form id="contact-form">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" required>
+                    
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone">
+                    
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade">
+                    
+                    <button type="submit">Salvar Informações</button>
+                </form>
+            </div>
         </div>
-    </nav>
-    <aside>
-        <button class="but" id="btnConta" type="button">Informações da Conta</button>
-        <button class="but2" id="btnCriados" type="button">Eventos Criados</button>
-        <button class="but3" id="btnInscritos" type="button">Eventos Inscritos</button>
-    </aside>
-    <main id="mainContent">
-        
     </main>
-    <footer class="rodape">
-        <div class="conteudo-superior">
-            <div class="logo2">
-                <img src="/img/image 25.png" alt="Logo" class="imagem-logo">
-            </div>
-            <div class="menu">
-                <h3>Menu</h3>
-                <p>Sobre Nós</p>
-                <p>Avaliar Serviços</p>
-            </div>
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-image">
+            <img src="/img/image 25.png" alt="Imagem do Rodapé" class="footer-img">
+          </div>
+          <nav class="footer-nav">
+            <ul>
+                <li><a href="/html/inicial.html">Menu</a></li>
+                <li><a href="/html/sobrenós.html">Sobre Nós</a></li>
+                <li><a href="/html/feedback.html">Avaliar Serviços</a></li>
+            </ul>
+          </nav>
+          <div class="social-icons">
+            <a href="#">🔵</a>
+            <a href="#">🟢</a>
+            <a href="#">🟡</a>
+          </div>
         </div>
-        
-        <div class="conteudo-inferior">
-            <div class="linha"></div>
-            <div class="direitos"><p>2024 InclusiOn | Todos os direitos reservados.</p></div>
-        </div>
-    </footer>
+        <p>&copy; 2024 InclusiOn. Todos os direitos reservados.</p>
+      </footer>
+    
+      <script src="/js/inicial.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>

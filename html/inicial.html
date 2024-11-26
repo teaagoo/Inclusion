@@ -1,95 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicial</title>
-    <link rel="stylesheet" href="/css/inicial.css">
-    <script src="https://kit.fontawesome.com/cdff859e19.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InclusiOn - Solução para Eventos</title>
+  <link rel="stylesheet" href="/css/inicial.css">
 </head>
 <body>
-    <header>
-    <div class="top">
-        <div class="top-bar">
-        <span><i style="color: black;" class="fa-solid fa-location-pin"></i> Guanambi, BA</span>
+    <header class="header-zoom">
+        <div class="zoom-controls">
+           <span id="guarambi-title">Guanambi</span>
+          <button id="zoom-in">+</button>
+          <button id="zoom-out">-</button>
         </div>
-            <div class="top-options">
-                <span class="acessibilidade">+ | A | -</span>
-                <span class="contraste">Contraste</span>s
-            </div>
-        
-    </div>
-
-        <nav class="nav-bar">
-            <div class="logo">
-                <img src="/img/image 25.png" alt="" class="imagem-logo" >
-            </div>
-            <div class="search-bar">
-                <input class="bar" type="text" name="searcbar" placeholder="Pesquisar Eventos" onkeyup="search()">
-                </input>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="#" class="nav-link">Eventos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Criar um Evento</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Cadastre-se</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <div class="titulo"><h3 class="text">InclusiOn</h3>
-        <p id="tex">Soluções Para Eventos PcD</p>
-        <button class="butao" type="submit">Cadastre-se</button>
-    </div>
-    <div class="eventos"><p>Reunimos os Melhores Eventos Para Você</p>
-    </div>
-
-    <div class="container">
-      <div class="item-1">
-        <div><p>Mundo sem Barreiras</p>
-          </br>
-          <p>Monte Alto/Ba</p>
-          <a class="butitem" href="#">> </a>
-        </div>
-      </div>
-    <div class="item-2"> <div><p>Inclusão em Foco</p>
-        </br>
-        <p>Candiba/Ba</p>
-        <a class="butitem2" href="#">> </a>
-    </div></div>
-      <div class="item-3"> <div><p>Acessibilidade em ação</p>
-        </br>
-        <p>Pilões/Ba</p>
-        <a class="butitem3" href="#">> </a>
-    </div></div>
-      <div class="item-4"> <div><p>Incluir para Tranformar</p>
-        </br>
-        <p>Guanambi/Ba</p>
-        <a class="butitem4" href="#">> </a>
-      </div>
-    </div>
-    </div>
-    <div class="butao-2">
-        <button class="butao2" name="submit">Ver todos os Eventos</button>
-    </div>
-    <footer class="rodape">
-        <div class="conteudo-superior">
-            <div class="logo2">
-                <img src="/img/image 25.png" alt="Logo" class="imagem-logo">
-            </div>
-            <div class="menu">
-                <h3>Menu</h3>
-                <p>Sobre Nós</p>
-                <p>Avaliar Serviços</p>
-            </div>
-        </div>
-        <div class="conteudo-inferior">
-            <div class="linha"></div>
-            <div class="direitos"><p>2024 InclusiOn | Todos os direitos reservados.</p></div>
-        </div>
-    </footer>
+      </header>
     
+      <!-- Segundo header com barra de pesquisa e navegação -->
+      <header class="header">
+        <div class="search-bar">
+          <img src="/img/image 25.png" alt="Logo" class="search-bar-img">
+          <input type="text" placeholder="Procurar eventos">
+          <button>🔍</button>
+        </div>
+        <nav class="nav">
+          <a href="/html/eventos.html">Eventos</a>
+          <a href="/html/criar-evento.html">Criar um evento</a>
+          <a href="/html/main.html">Login</a>
+          <a href="/html/cadastrar.html">Cadastrar-se</a>
+        </nav>
+      </header>
+
+  <section class="content">
+    <div class="hero">
+      <h1>InclusiOn</h1>
+      <p>Solução Para Eventos PC D</p>
+       <a href="/html/cadastrar.html"><button class="btn-primary">Cadastrar-se</button></a>
+    </div>
+
+    <div class="services">
+      <h2>Realizamos o Melhor para Eventos com Impacto Social</h2>
+      <div class="service-cards">
+        <button> 
+            <p>Mundo sem Barreiras</p>
+            <p>Monte Alto-BA</p>
+        </button>
+        <button>
+            <p>Inclusão em Foco</p>
+            <p>Candiba-BA</p>
+        </button>
+        <button>
+            <p>Acessibilidade em Ação</p>
+            <p>Pilões-BA</p>
+        </button>
+        <button>
+            <p>Incluir para Transformar</p>
+            <p>Guanambi-BA</p>
+        </button>
+      </div>
+      <a href="/html/eventos.html"<button class="btn-secondary">Ver Todos os Eventos</button></a>
+    </div>
+  </section>
+
+  <!-- Rodapé com imagem e navegação -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-image">
+        <img src="/img/image 25.png" alt="Imagem do Rodapé" class="footer-img">
+      </div>
+      <nav class="footer-nav">
+        <ul>
+            <li><a href="/html/inicial.html">Menu</a></li>
+            <li><a href="/html/sobrenós.html">Sobre Nós</a></li>
+            <li><a href="/html/feedback.html">Avaliar Serviços</a></li>
+        </ul>
+      </nav>
+      <div class="social-icons">
+        <a href="#">🔵</a>
+        <a href="#">🟢</a>
+        <a href="#">🟡</a>
+      </div>
+    </div>
+    <p>&copy; 2024 InclusiOn. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="/js/inicial.js"></script>
 </body>
 </html>

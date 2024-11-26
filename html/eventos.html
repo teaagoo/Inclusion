@@ -1,64 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos</title>
     <link rel="stylesheet" href="/css/eventos.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header>
-        <div class="nada"></div>
-        <div class="cidade"> <span> 📍Guanambi, BA</span></div>
-        <div class="acessibilidade">
-            <span>+ | A | -</span>
-            <span>Contraste</span>
+    <header class="header-zoom">
+        <div class="zoom-controls">
+           <span id="guarambi-title">Guanambi</span>
+          <button id="zoom-in">+</button>
+          <button id="zoom-out">-</button>
         </div>
-    </header>
-    <nav class="nav-bar">
-        <div class="logo">
-            <img src="/img/image 25.png" alt="" class="imagem-logo" >
-        </div>
+      </header>
+    
+      <!-- Segundo header com barra de pesquisa e navegação -->
+      <header class="header">
         <div class="search-bar">
-            <input class="bar" type="text" name="searcbar" placeholder="Pesquisar Eventos" onkeyup="search()">
-            </input>
+          <img src="/img/image 25.png" alt="Logo" class="search-bar-img">
+          <input type="text" placeholder="Procurar eventos">
+          <button>🔍</button>
         </div>
-        <div class="nav-list">
-            <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Eventos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Criar um Evento</a></li>
-                <li class="nav-item"><i class="fa-regular fa-circle-user"></i></li>
-                <li class="nav-item"><a href="#" class="nav-link">Nome do Usuario</a></li>
-            </ul>
-        </div>
-    </nav>
-    <main id="main">
-        <div class="top-main"> 
-            <div class="titulo"> <h1>Eventos</h1> 
-        </div>
-        <div class="linha"></div>
-        </div>
-        <div class="top-center">
-
-        </div>
+        <nav class="nav">
+          <a href="/html/eventos.html">Eventos</a>
+          <a href="/html/criar-evento.html">Criar um evento</a>
+          <a href="/html/main.html">Login</a>
+          <a href="/html/cadastrar.html">Cadastrar-se</a>
+        </nav>
+      </header>
+    <main>
+        <section class="event-section">
+            <h1>Eventos</h1>
+            <div class="event-list">
+                <!-- Evento -->
+                <div class="event-card">
+                    <img src="https://via.placeholder.com/100" alt="Imagem do evento">
+                    <div class="event-info">
+                        <h2>Título do evento</h2>
+                        <p>Data e hora</p>
+                        <p>Local</p>
+                        <p>Valor (Gratuito ou Preço)</p>
+                    </div>
+                </div>
+                <!-- Repetir o card -->
+                <div class="event-card">
+                    <img src="https://via.placeholder.com/100" alt="Imagem do evento">
+                    <div class="event-info">
+                        <h2>Título do evento</h2>
+                        <p>Data e hora</p>
+                        <p>Local</p>
+                        <p>Valor (Gratuito ou Preço)</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="https://via.placeholder.com/100" alt="Imagem do evento">
+                    <div class="event-info">
+                        <h2>Título do evento</h2>
+                        <p>Data e hora</p>
+                        <p>Local</p>
+                        <p>Valor (Gratuito ou Preço)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="rodape">
-        <div class="conteudo-superior">
-            <div class="logo2">
-                <img src="/img/image 25.png" alt="Logo" class="imagem-logo">
-            </div>
-            <div class="menu">
-                <h3>Menu</h3>
-                <p>Sobre Nós</p>
-                <p>Avaliar Serviços</p>
-            </div>
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-image">
+            <img src="/img/image 25.png" alt="Imagem do Rodapé" class="footer-img">
+          </div>
+          <nav class="footer-nav">
+            <ul>
+                <li><a href="/html/inicial.html">Menu</a></li>
+                <li><a href="/html/sobrenós.html">Sobre Nós</a></li>
+                <li><a href="/html/feedback.html">Avaliar Serviços</a></li>
+            </ul>
+          </nav>
+          <div class="social-icons">
+            <a href="#">🔵</a>
+            <a href="#">🟢</a>
+            <a href="#">🟡</a>
+          </div>
         </div>
-        
-        <div class="conteudo-inferior">
-            <div class="linha2"></div>
-            <div class="direitos"><p>2024 InclusiOn | Todos os direitos reservados.</p></div>
-        </div>
-    </footer>
+        <p>&copy; 2024 InclusiOn. Todos os direitos reservados.</p>
+      </footer>
+    
+      <script src="/js/inicial.js"></script>
 </body>
 </html>

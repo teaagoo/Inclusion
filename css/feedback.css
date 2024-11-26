@@ -102,38 +102,68 @@ body {
 
 
 
-.event-section {
-    padding: 20px;
+main{
+    display: flex;
+    background-color: #A0DED6;
+    align-items: center;
+    flex: 1 1 100vw;
+    height: 100vh;
+    justify-content: start;
+    gap:150px;
+    flex-direction: column;
+    
+}
+h1{
+    margin-top: 40px;
+    color: black;
+}
+h3{
+    color: black;
 }
 
-.event-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+.top-center{
+    background-color: #005F6B;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding: 30px;
+    gap: 0px;
+    border-radius: 20px;
+    justify-content: center;
+}
+.assunto{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.mensagem{
+    display: flex;
+    justify-content: space-around;
 }
 
-.event-card {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+.caixa{
+    border: none;
+    width: 300px;
+    margin-top: 20px ;
+}
+#description {
+    height: 80px;
+    width: 300px; 
+    margin: 10px;
+    border-radius: 5px;
+    resize: none; 
 }
 
-.event-card:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+#assunto{
+    height: 20px;
+    border-radius: 5px;
+    text-align: start;
 }
 
-.event-card img {
-    width: 100%;
-    height: auto;
-}
 
-.event-info {
-    padding: 10px;
-}
+
+
 
 .footer {
     background-color: #0B5F76;
