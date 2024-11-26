@@ -7,28 +7,6 @@
     <link rel="stylesheet" href="/css/info_contato.css">
 </head>
 <body>
-    <header class="header-zoom">
-        <div class="zoom-controls">
-           <span id="guarambi-title">Guanambi</span>
-          <button id="zoom-in">+</button>
-          <button id="zoom-out">-</button>
-        </div>
-      </header>
-    
-      <!-- Segundo header com barra de pesquisa e navegação -->
-      <header class="header">
-        <div class="search-bar">
-          <img src="/img/image 25.png" alt="Logo" class="search-bar-img">
-          <input type="text" placeholder="Procurar eventos">
-          <button>🔍</button>
-        </div>
-        <nav class="nav">
-          <a href="/html/eventos.html">Eventos</a>
-          <a href="/html/criar-evento.html">Criar um evento</a>
-          <a href="/html/main.html">Login</a>
-          <a href="/html/cadastrar.html">Cadastrar-se</a>
-        </nav>
-      </header>
     <main class="account-section">
         <h1>Editar Perfil</h1>
         <div class="account-grid">
@@ -37,48 +15,36 @@
                 <h2>Foto de Perfil</h2>
                 <img id="profile-img" src="https://via.placeholder.com/150" alt="Foto de Perfil">
                 <input type="file" id="profile-pic-input" accept="image/*">
-                <button id="upload-btn">Carregar Foto</button>
+                <button type="button" id="upload-btn">Carregar Foto</button>
             </div>
-            <!-- Informações de Contato -->
+            <!-- Formulário de Informações -->
             <div class="contact-info">
-                <h2>Informações de Contato</h2>
-                <form id="contact-form">
+                <h2>Informações do Usuário</h2>
+                <form id="user-form">
+                    <!-- Informações de Contato -->
                     <label for="nome">Nome Completo</label>
-                    <input type="text" id="nome" required>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
                     
                     <label for="telefone">Telefone</label>
-                    <input type="text" id="telefone">
-                    
+                    <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone">
+
                     <label for="cidade">Cidade</label>
-                    <input type="text" id="cidade">
+                    <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
+
+                    <!-- Informações de Login -->
+                    <h3>Dados de Login</h3>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
                     
+                    <label for="senha">Nova Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua nova senha" required>
+
                     <button type="submit">Salvar Informações</button>
                 </form>
             </div>
         </div>
+        <div id="output"></div>
     </main>
-    <footer class="footer">
-        <div class="footer-content">
-          <div class="footer-image">
-            <img src="/img/image 25.png" alt="Imagem do Rodapé" class="footer-img">
-          </div>
-          <nav class="footer-nav">
-            <ul>
-                <li><a href="/html/inicial.html">Menu</a></li>
-                <li><a href="/html/sobrenós.html">Sobre Nós</a></li>
-                <li><a href="/html/feedback.html">Avaliar Serviços</a></li>
-            </ul>
-          </nav>
-          <div class="social-icons">
-            <a href="#">🔵</a>
-            <a href="#">🟢</a>
-            <a href="#">🟡</a>
-          </div>
-        </div>
-        <p>&copy; 2024 InclusiOn. Todos os direitos reservados.</p>
-      </footer>
-    
-      <script src="/js/inicial.js"></script>
 
     <script src="script.js"></script>
 </body>
