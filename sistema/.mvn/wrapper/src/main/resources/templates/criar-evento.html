@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Evento</title>
+    <link rel="stylesheet" href="/criar-evento.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nada"></div>
+        <div class="cidade"><span>📍 Guanambi, BA</span></div>
+        <div class="acessibilidade">
+            <span>+ | A | -</span>
+            <span>Contraste</span>
+        </div>
+    </header>
+    <nav class="nav-bar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="imagem-logo">
+        </div>
+        <div class="search-bar">
+            <input class="bar" type="text" name="searchbar" placeholder="Pesquisar Eventos">
+        </div>
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Eventos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Criar um Evento</a></li>
+                <li class="nav-item"><i class="fa-regular fa-circle-user"></i></li>
+                <li class="nav-item"><a href="#" class="nav-link">Nome do Usuário</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <form id="eventForm" method="POST" action="/evento/criar">
+            <h1>Criação de Evento</h1>
+
+            <div>
+                <label for="eventName">Nome do Evento:</label>
+                <input type="text" id="eventName" name="nome" placeholder="Nome do Evento" required>
+            </div>
+
+            <div>
+                <label for="eventDateTime">Data e Hora do Evento:</label>
+                <input type="datetime-local" id="eventDateTime" name="data" required>
+            </div>
+
+            <div>
+                <label for="eventLocation">Localização:</label>
+                <input type="text" id="eventLocation" name="local" placeholder="Endereço do Evento" required>
+            </div>
+
+            <!-- Novo campo para detalhes -->
+            <div>
+                <label for="eventDetails">Detalhes:</label>
+                <textarea id="eventDetails" name="detalhes" placeholder="Adicione detalhes sobre o evento" required></textarea>
+            </div>
+
+            <!-- Novo campo para ingresso -->
+            <div>
+                <label for="eventIngresso">Ingresso:</label>
+                <select id="eventIngresso" name="ingresso" required>
+                    <option value="pago">Pago</option>
+                    <option value="gratis">Grátis</option>
+                </select>
+            </div>
+
+            <!-- Novo campo para tipo de evento -->
+            <div>
+                <label for="eventTipo">Tipo de Evento:</label>
+                <select id="eventTipo" name="tipoDeEvento" required>
+                    <option value="pcd">PCD</option>
+                    <option value="evento1">Tipo 1 Deficiência Física</option>
+                    <option value="evento2">Tipo 2 Deficiência Auditiva</option>
+                    <option value="evento3">Tipo 3 Deficiência Visual</option>
+                    <option value="evento4">Tipo 4 Deficiência intellectual</option>
+                </select>
+            </div>
+
+            <div>
+                <button type="submit" id="createEventButton">Criar Evento</button>
+            </div>
+        </form>
+    </main>
+    <footer class="rodape">
+        <div class="conteudo-superior">
+            <div class="logo2">
+                <img src="/logo.png" alt="Logo" class="imagem-logo">
+            </div>
+            <div class="menu">
+                <h3>Menu</h3>
+                <p>Sobre Nós</p>
+                <p>Avaliar Serviços</p>
+            </div>
+        </div>
+        <div class="conteudo-inferior">
+            <div class="linha"></div>
+            <div class="direitos"><p>2024 InclusiOn | Todos os direitos reservados.</p></div>
+        </div>
+    </footer>
+</body>
+<script src="/js/criar-evento.js"></script>
+</html>
