@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    color: #333;
     background-color: #f9f9f9;
     line-height: 1.6;
   }
@@ -50,7 +49,7 @@ body {
   .search-bar {
     display: flex;
     align-items: center;
-    gap: 10px;  /* Espaçamento entre a imagem e a input */
+    gap: 10px; /* Espaçamento entre a imagem e a input */
   }
   
   .search-bar-img {
@@ -64,7 +63,6 @@ body {
     padding: 15px 10px;
     border: none;
     border-radius: 10px;
-
     flex: 1;
   }
   
@@ -91,43 +89,85 @@ body {
   .nav a:hover {
     text-decoration: underline;
   }
+  
+
+.main-container {
+    display: flex; 
+    width: 100%;
+    margin: auto;
+}
+
+/* Aside ao lado esquerdo */
+aside.quick-links {
+    flex: 1; 
+    max-width: 250px; 
+    background-color: #0B5F76;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Centraliza o conteúdo do aside */
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+aside ul li a:hover {
+    color: #007b77;
+}
 
 
-#main{
+.account-section {
+    flex: 3; 
+    background: #A0DED6;
+    padding: 50px;
+    border-radius: 8px;
     display: flex;
-    flex: 1 1 100vw;
-    font-size: 10px;
-    background-color: #A0DED6;
-    gap: 10px;
     justify-content: center;
-    font-size: 20px;
-    padding: 30px;
-
+    align-items: center;
+    height: 80vh; 
+    
 }
 
-.top-left{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    flex: 1 1 300px ;
-    justify-content: center;
-}
-.top-rigth{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex: 1 1 300px ;
-}
-.texto-titulo{
-    align-self: center;
-}
-
-.img{
+.giant-square {
+    width:700px;
+    height: 500px;
+    background-color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.footer {
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Pilha o aside e o main verticalmente em telas pequenas */
+    }
+
+    aside.quick-links {
+        max-width: 100%; /* Faz o aside ocupar toda a largura */
+        margin-bottom: 20px; /* Adiciona espaço abaixo do aside */
+    }
+}
+
+  
+  /* Footer */
+  .footer {
     background-color: #0B5F76;
     color: #fff;
     text-align: center;
@@ -206,3 +246,16 @@ body {
       margin-bottom: 15px;
     }
   }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+    }
+  
+    aside.quick-links {
+      flex: none;
+      margin-top: 20px;
+    }
+  }
+  

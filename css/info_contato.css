@@ -1,15 +1,147 @@
-/* Mesmos estilos anteriores */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Primeiro header (Guanambi + Zoom) */
+.header-zoom {
+  background-color: #4ca14c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.zoom-controls {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#guarambi-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+button {
+  background-color: #4ca14c;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4ca14c;
+}
+
+/* Segundo header com barra de pesquisa e navegação */
+.header {
+  background-color: #0B5F76;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;  /* Espaçamento entre a imagem e a input */
+}
+
+.search-bar-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.search-bar input {
+  padding: 15px 10px;
+  border: none;
+  border-radius: 10px;
+
+  flex: 1;
+}
+
+.search-bar button {
+  background-color: #1CD4E4;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Seção da imagem com navegação ao lado */
+.image-nav {
+  display: flex;
   padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.main-container {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+
+aside.quick-links {
+  flex: 1;
+  background-color: #0B5F76;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside ul li {
+  margin-bottom: 10px;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+aside ul li a:hover {
+  color: #007b77;
 }
 
 .account-section {
-  max-width: 600px;
-  margin: auto;
-  background: #ffffff;
+  flex: 3;
+  background: #A0DED6;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -22,7 +154,8 @@ body {
 }
 
 .profile-picture {
-  text-align: center;
+  text-align: start;
+  flex-direction: column;
 }
 
 .profile-picture img {
@@ -33,18 +166,12 @@ body {
   margin-bottom: 10px;
 }
 
-.contact-info form,
-.login-info {
+.contact-info form {
   display: grid;
   gap: 10px;
 }
 
-.login-info p {
-  margin: 0;
-  font-size: 16px;
-}
-
-button {
+main button {
   background-color: #00a39d;
   color: white;
   border: none;
@@ -63,4 +190,95 @@ button:hover {
   background: #e7f9f7;
   border: 1px solid #00a39d;
   border-radius: 5px;
+}
+
+.footer {
+  background-color: #0B5F76;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-nav li {
+  margin: 0;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer-nav a:hover {
+  color: #1CD4E4;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-nav li {
+    margin: 10px 0;
+  }
+
+  .footer-img {
+    margin-bottom: 15px;
+  }
+}
+/* Responsividade */
+@media (max-width: 768px) {
+  .main-container {
+      flex-direction: column;
+  }
+
+  aside.quick-links {
+      flex: none;
+      margin-top: 20px;
+  }
 }
