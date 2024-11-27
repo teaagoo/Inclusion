@@ -25,16 +25,8 @@ body {
     font-weight: bold;
   }
   
-  button {
-    background-color: #4ca14c;
-    color: #fff;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-  }
-  
   button:hover {
-    background-color: #4ca14c;
+    background-color: #1CD4E4;
   }
   
   /* Segundo header com barra de pesquisa e navegação */
