@@ -20,9 +20,9 @@ public class EventoController {
     }
 
     @PostMapping("/criar")
-    public String criarEvento(@ModelAttribute Evento evento, Model model) {
-        eventoService.cadastrarEvento(evento);
-        model.addAttribute("mensagem", "Evento criado com sucesso!");
-        return "sucesso"; // Redireciona para uma página de sucesso
+    public String criarEvento(@ModelAttribute Evento evento, @RequestParam("usuarioId") Long usuarioId, Model model) {
+        eventoService.cadastrarEvento(evento, usuarioId);
+        return "redirect:/usuario/perfil"; // Redireciona para a página do perfil
     }
+    
 }
