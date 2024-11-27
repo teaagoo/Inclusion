@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos Inscritos</title>
-    <link rel="stylesheet" href="/css/eventos-iscritos.css">
+    <title>Feedback</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/feedback-sobre-eventos.css">
 </head>
 <body>
     <header class="header-zoom">
         <div class="zoom-controls">
             <span id="guarambi-title">Guanambi</span>
-            <button id="zoom-in">+</button>
-            <button id="zoom-out">-</button>
         </div>
     </header>
     
@@ -25,57 +24,57 @@
         <nav class="nav">
             <a href="/html/eventos.html">Eventos</a>
             <a href="/html/criar-evento.html">Criar um evento</a>
-            <a href="/html/info_contato.html">Usuário</a>
+            <a href="/html/info_contato.html">Usuario</a>
         </nav>
     </header>
-    
-    <div class="main-container">
-        <aside class="quick-links">
-            <ul>
-                <li><a href="/html/info_contato.html">Informações da Conta</a></li>
-                <li><a href="/html/sobrenos.html">Eventos Criados</a></li>
-                <li><a href="/html/feedback.html">Eventos Inscritos</a></li>
-            </ul>
-        </aside>
 
-        <main>
-            <h1>Feedback sobre eventos</h1>
-            <div class="top-center">
-                <div class="feedback-card">
-                    <img src="/img/image25.png" alt="Imagem evento" class="event-image">
-                    <div class="content">
-                        <h3>Título do evento</h3>
-                        
+    <main>
+        <h1>Feedback sobre eventos</h1>
+        <div class="top-center">
+            <div class="feedback-card">
+                <img src="/img/image25.png" alt="Imagem Evento" class="event-image">
+                <div class="content">
+                    <h2>Título do evento</h2>
+                    
+                    <!-- Formulário de feedback -->
+                    <form action="#" method="POST">
                         <!-- Mensagem -->
-                        <label for="feedback-message">Mensagem:</label>
-                        <textarea id="feedback-message" name="feedback-message" placeholder="Escreva aqui sua mensagem..." required></textarea>
+                        <div class="message-container">
+                            <label for="feedback-message">Mensagem:</label>
+                            <textarea id="feedback-message" name="feedback-message" placeholder="Escreva aqui sua mensagem..." required></textarea>
+                        </div>
                         
                         <!-- Classificação por estrelas -->
-                        <form class="rating-form">
-                            <label for="rating">Classificar:</label>
+                        <div class="rating-container">
+                            <label for="rating" class="rating-label">Classificar:</label>
                             <div class="stars">
                                 <input type="radio" id="star5" name="rating" value="5">
                                 <label for="star5" class="fas fa-star"></label>
-        
+    
                                 <input type="radio" id="star4" name="rating" value="4">
                                 <label for="star4" class="fas fa-star"></label>
-        
+    
                                 <input type="radio" id="star3" name="rating" value="3">
                                 <label for="star3" class="fas fa-star"></label>
-        
+    
                                 <input type="radio" id="star2" name="rating" value="2">
                                 <label for="star2" class="fas fa-star"></label>
-        
+    
                                 <input type="radio" id="star1" name="rating" value="1">
                                 <label for="star1" class="fas fa-star"></label>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+    
+                        <!-- Botão de envio -->
+                        <button type="submit">Enviar Feedback</button>
+                    </form>
                 </div>
             </div>
-        </main>
-        
-    </div>
+        </div>
+    </main>
+    
+    
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-image">
@@ -96,7 +95,6 @@
         </div>
         <p>&copy; 2024 InclusiOn. Todos os direitos reservados.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
+

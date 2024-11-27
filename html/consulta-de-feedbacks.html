@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/feedback.css">
+    <title>Evento</title>
+    <link rel="stylesheet" href="/css/consulta-de-feedbacks.css">
+
 </head>
 <body>
     <header class="header-zoom">
@@ -19,31 +19,43 @@
         <div class="search-bar">
             <img src="/img/image 25.png" alt="Logo" class="search-bar-img">
             <input type="text" placeholder="Procurar eventos">
-            <button>🔍</button>
+            <button class="lupa">🔍</button>
         </div>
         <nav class="nav">
             <a href="/html/eventos.html">Eventos</a>
             <a href="/html/criar-evento.html">Criar um evento</a>
-            <a href="/html/info_contato.html">Usuario</a>
+            <a href="/html/info_contato.html">Usuário</a>
         </nav>
     </header>
 
-    <main>
-        <h1>Avaliar Serviços</h1>
-        <div class="top-center">
-            <form action="/submit-feedback" method="POST">
-                <div class="assunto">
-                    <h3>Assunto</h3>
-                    <input class="caixa" id="assunto" type="text" name="assunto" required>
-                </div>
-                <div class="mensagem">
-                    <h3>Mensagem</h3>
-                    <textarea class="caixa" id="description" name="descricao" required></textarea>
-                </div>
-                <button type="submit" class="btn-primary">Enviar Feedback</button>
-            </form>
+    <div class="container">
+        <div class="event-image">
+            <p>Imagem do evento</p>
         </div>
-    </main>
+        <div class="event-details">
+            <h1>Título do evento</h1>
+            <p>Uma frase curta sobre o evento.</p>
+            <p>Por Empresa, Grupo, Responsável pelo evento</p>
+        </div>
+
+        <div class="reviews">
+            <div class="review">
+                <h3>Nome do usuário</h3>
+                <p>Aqui vai o comentário do cliente sobre o que ele achou do evento e o que poderia melhorar.</p>
+                <p class="stars">★★★★★</p>
+            </div>
+            <div class="review">
+                <h3>Nome do usuário</h3>
+                <p>Aqui vai o comentário do cliente sobre o que ele achou do evento e o que poderia melhorar.</p>
+                <p class="stars">★★★★★</p>
+            </div>
+            <div class="review">
+                <h3>Nome do usuário</h3>
+                <p>Aqui vai o comentário do cliente sobre o que ele achou do evento e o que poderia melhorar.</p>
+                <p class="stars">★★★★★</p>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer-content">
@@ -65,7 +77,5 @@
         </div>
         <p>&copy; 2024 InclusiOn. Todos os direitos reservados.</p>
     </footer>
-
-    <script src="/js/inicial.js"></script>
 </body>
 </html>
