@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/feedback-sobre-eventos.css">
+</head>
+<body>
+    <header class="header-zoom">
+        <div class="zoom-controls">
+            <span id="guarambi-title">Guanambi</span>
+        </div>
+    </header>
+    
+    <!-- Segundo header com barra de pesquisa e navegação -->
+    <header class="header">
+        <div class="search-bar">
+            <img src="/img/image 25.png" alt="Logo" class="search-bar-img">
+            <input type="text" placeholder="Procurar eventos">
+            <button>🔍</button>
+        </div>
+        <nav class="nav">
+            <a href="/html/eventos.html">Eventos</a>
+            <a href="/html/criar-evento.html">Criar um evento</a>
+            <a href="/html/info_contato.html">Usuario</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Feedback sobre eventos</h1>
+        <div class="top-center">
+            <div class="feedback-card">
+                <img src="/img/image25.png" alt="Imagem Evento" class="event-image">
+                <div class="content">
+                    <h2>Título do evento</h2>
+                    
+                    <!-- Formulário de feedback -->
+                    <form action="#" method="POST">
+                        <!-- Mensagem -->
+                        <div class="message-container">
+                            <label for="feedback-message">Mensagem:</label>
+                            <textarea id="feedback-message" name="feedback-message" placeholder="Escreva aqui sua mensagem..." required></textarea>
+                        </div>
+                        
+                        <!-- Classificação por estrelas -->
+                        <div class="rating-container">
+                            <label for="rating" class="rating-label">Classificar:</label>
+                            <div class="stars">
+                                <input type="radio" id="star5" name="rating" value="5">
+                                <label for="star5" class="fas fa-star"></label>
+    
+                                <input type="radio" id="star4" name="rating" value="4">
+                                <label for="star4" class="fas fa-star"></label>
+    
+                                <input type="radio" id="star3" name="rating" value="3">
+                                <label for="star3" class="fas fa-star"></label>
+    
+                                <input type="radio" id="star2" name="rating" value="2">
+                                <label for="star2" class="fas fa-star"></label>
+    
+                                <input type="radio" id="star1" name="rating" value="1">
+                                <label for="star1" class="fas fa-star"></label>
+                            </div>
+                        </div>
+    
+                        <!-- Botão de envio -->
+                        <button type="submit">Enviar Feedback</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-image">
+                <img src="/img/image 25.png" alt="Imagem do Rodapé" class="footer-img">
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="/html/inicial.html">Menu</a></li>
+                    <li><a href="/html/sobrenós.html">Sobre Nós</a></li>
+                    <li><a href="/html/feedback.html">Avaliar Serviços</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="#">🔵</a>
+                <a href="#">🟢</a>
+                <a href="#">🟡</a>
+            </div>
+        </div>
+        <p>&copy; 2024 InclusiOn. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+

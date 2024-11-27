@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Criados</title>
+    <link rel="stylesheet" href="../static/info_contato.css">
+</head>
+<body>
+    <header class="header">
+        <div class="search-bar">
+            <img src="/img/image 25.png" alt="Logo" class="search-bar-img">
+            <input type="text" placeholder="Procurar eventos">
+            <button>🔍</button>
+        </div>
+        <nav class="nav">
+            <a href="/html/eventos.html">Eventos</a>
+            <a href="/html/criar-evento.html">Criar um evento</a>
+            <a href="/html/info_contato.html">Usuario</a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <aside class="quick-links">
+            <ul>
+                <li><a href="/html/info_contato.html">Informações da Conta</a></li>
+                <li><a href="/html/eventos-criados.html" class="active">Eventos Criados</a></li>
+                <li><a href="/html/eventos-inscritos.html">Eventos Inscritos</a></li>
+            </ul>
+        </aside>
+        <section class="account-section">
+            <h1>Eventos Criados</h1>
+            <div class="event-list">
+                <!-- Loop para exibir eventos -->
+                <div class="event-card">
+                    <h2>Nome do Evento</h2>
+                    <p><strong>Local:</strong> Local do evento</p>
+                    <p><strong>Data:</strong> 26/11/2024</p>
+                    <p><strong>Detalhes:</strong> Breve descrição do evento</p>
+                </div>
+                <!-- Fim do loop -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>

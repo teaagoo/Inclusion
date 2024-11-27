@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/feedback.css">
+    <title>Gerenciamento de Evento</title>
+    <link rel="stylesheet" href="/css/inscrição-em-eventos-administrador.css">
+   
 </head>
 <body>
     <header class="header-zoom">
@@ -28,23 +28,23 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Avaliar Serviços</h1>
-        <div class="top-center">
-            <form action="/submit-feedback" method="POST">
-                <div class="assunto">
-                    <h3>Assunto</h3>
-                    <input class="caixa" id="assunto" type="text" name="assunto" required>
-                </div>
-                <div class="mensagem">
-                    <h3>Mensagem</h3>
-                    <textarea class="caixa" id="description" name="descricao" required></textarea>
-                </div>
-                <button type="submit" class="btn-primary">Enviar Feedback</button>
-            </form>
+    <div class="container">
+        <div class="event-info">
+            <h2>Título do Evento: Show de Música</h2>
+            <p><strong>Data e Hora:</strong> 25 de Dezembro de 2024, 19:00</p>
+            <p><strong>Localização:</strong> Arena de Shows, Cidade X</p>
+            <p><strong>Tipo de Evento:</strong> Show</p>
+            <p><strong>Descrição:</strong> Um show incrível com bandas locais e nacionais!</p>
+            <p><strong>Tags:</strong> #show #música #diversão</p>
+            <p><strong>Organizador:</strong> Empresa X</p>
+            <p><strong>Contato:</strong> (00) 00000-0000</p>
         </div>
-    </main>
 
+        <div class="button-container">
+            <button type="button" class="approve-button">Aprovar Evento</button>
+            <button type="button" class="reject-button">Rejeitar Evento</button>
+        </div>
+    </div>
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-image">
@@ -65,7 +65,5 @@
         </div>
         <p>&copy; 2024 InclusiOn. Todos os direitos reservados.</p>
     </footer>
-
-    <script src="/js/inicial.js"></script>
 </body>
 </html>

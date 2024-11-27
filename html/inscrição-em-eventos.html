@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Evento</title>
+    <link rel="stylesheet" href="/css/inscrição-em-eventos.css">
+</head>
+<body>
+    <header class="header-zoom">
+        <div class="zoom-controls">
+            <span id="guarambi-title">Guanambi</span>
+        </div>
+    </header>
+    
+    <!-- Segundo header com barra de pesquisa e navegação -->
+    <header class="header">
+        <div class="search-bar">
+            <img src="/img/image 25.png" alt="Logo" class="search-bar-img">
+            <input type="text" placeholder="Procurar eventos">
+            <button>🔍</button>
+        </div>
+        <nav class="nav">
+            <a href="/html/eventos.html">Eventos</a>
+            <a href="/html/criar-evento.html">Criar um evento</a>
+            <a href="/html/info_contato.html">Usuario</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="event-image"><img src="foto do evento" alt=""></div> <!-- Imagem do evento -->
+        <form action="#" method="post">
+            <div class="form-section">
+                <label for="titulo">Título do Evento</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Digite o título do evento">
+            </div>
+
+            <div class="form-section">
+                <label for="data-hora">Data e Hora</label>
+                <input type="datetime-local" id="data-hora" name="data-hora">
+            </div>
+
+            <div class="form-section">
+                <label for="localizacao">Localização</label>
+                <input type="text" id="localizacao" name="localizacao" placeholder="Digite o local do evento">
+            </div>
+
+            <div class="form-section">
+                <label for="tipo">Tipo do Evento</label>
+                <select id="tipo" name="tipo">
+                    <option value="show">Show</option>
+                    <option value="palestra">Palestra</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="form-section">
+                <label for="descricao">Sobre o Evento</label>
+                <textarea id="descricao" name="descricao" rows="5" placeholder="Descreva o evento"></textarea>
+            </div>
+
+            <div class="form-section">
+                <label for="tags">Tags</label>
+                <div class="tags-container">
+                    <input type="text" class="tag-input" name="tag1" placeholder="#tag1">
+                    <input type="text" class="tag-input" name="tag2" placeholder="#tag2">
+                    <input type="text" class="tag-input" name="tag3" placeholder="#tag3">
+                    <input type="text" class="tag-input" name="tag4" placeholder="#tag4">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <label for="organizador">Organizado por</label>
+                <input type="text" id="organizador" name="organizador" placeholder="Nome do responsável ou grupo">
+            </div>
+
+            <div class="form-section">
+                <label for="contato">Contato</label>
+                <input type="tel" id="contato" name="contato" placeholder="Digite o telefone para contato">
+            </div>
+
+            <button type="submit">Inscrever-se</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-image">
+                <img src="/img/image 25.png" alt="Imagem do Rodapé" class="footer-img">
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="/html/inicial.html">Menu</a></li>
+                    <li><a href="/html/sobrenós.html">Sobre Nós</a></li>
+                    <li><a href="/html/feedback.html">Avaliar Serviços</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="#">🔵</a>
+                <a href="#">🟢</a>
+                <a href="#">🟡</a>
+            </div>
+        </div>
+        <p>&copy; 2024 InclusiOn. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

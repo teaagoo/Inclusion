@@ -29,3 +29,37 @@ document.getElementById('eventForm').addEventListener('submit', function(event) 
     }
 });
 
+document.getElementById("eventForm").addEventListener("submit", async function (event) {
+    event.preventDefault(); // Evita o comportamento padrão do formulário
+
+    // Capturar os dados do formulário
+    const eventData = {
+        nome: document.getElementById("eventName").value,
+        local: document.getElementById("eventLocation").value,
+        data: document.getElementById("eventDateTime").value,
+        listClientes: [] // Adicione a lógica para capturar usuários, se necessário
+    };
+
+    try {
+        // Enviar os dados ao backend
+        const response = await fetch("http://localhost:8080/api/eventos/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(eventData),
+        });
+
+        if (response.ok) {
+            const result = await response.text();
+            alert(result); // Exibe a mensagem do backend
+        } else {
+            alert("Erro ao cadastrar evento.");
+        }
+    } catch (error) {
+        console.error("Erro ao cadastrar evento:", error);
+        alert("Erro ao conectar-se ao servidor.");
+    }
+});
+
+
