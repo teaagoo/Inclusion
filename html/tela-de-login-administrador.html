@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InclusiON - Login</title>
+    <link rel="stylesheet" href="/css/tela-de-login.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="top-bar">
+            <span>📍 Guanambi, BA</span>
+            <div class="top-options">
+                <button class="contrast-toggle">Contraste</button>
+                <span class="text-size">+ | A | -</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="main">
+        <div class="login-container">
+            <div class="images">
+                <img src="/img/telaLOgin.webp" alt="Imagem inclusiva">
+            </div>
+            <div class="login-box">
+                <h2>LOGIN</h2>
+                <form id="login-form" th:action="@{/logar}" method="POST">
+                  <div class="input-group">
+                        <label for="email">
+                            <span class="icon">📧</span> Endereço de e-mail
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">
+                            <span class="icon">🔒</span> Senha
+                        </label>
+                        <input type="password" id="password" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+                    <button type="submit">Acessar</button>
+                    <div th:if="${erro != null}" th:text="${erro}" class="alert alert-danger" role="alert"></div>
+
+                </form>
+                <div class="links">
+                    <a href="#">Esqueceu sua senha?</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#">📘</a>
+                <a href="#">📷</a>
+                <a href="#">✉️</a>
+                <a href="#">📞</a>
+            </div>
+            <div class="footer-menu">
+                <a href="#">Sobre nós</a>
+                <a href="#">Avaliar serviços</a>
+            </div>
+            <p>© 2024 InclusiON | Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
